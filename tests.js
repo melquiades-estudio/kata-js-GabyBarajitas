@@ -37,7 +37,7 @@ describe('Comparaciones en Javascript', () => {
 
 describe("Operaciones aritméticas", () => {
     it("Usando suma", () => {
-        const a = 10;
+        const a = 90;
         const b = 90;
         (a + b);
         expect(a+b).to.equal(100);
