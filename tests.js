@@ -60,14 +60,14 @@ describe('Algebra booleana', () => {
     it("Usando el operador AND (&&)", () => {
         const a = true;
         //completa la asignación de b
-
+        let b = true;
         const expression = a && b;
         expect(expression).to.equal(true);
     })
     it("Usando el operador OR (||)", () => {
         const a = false;
         //completa la asignación de b
-
+        let b = false;
         const expression = a || b;
         expect(expression).to.equal(false);
     })
@@ -81,7 +81,7 @@ describe("Ejemplos de funciones", () => {
         expect(evenOrOdd(2)).to.equal("even")
         expect(evenOrOdd(13)).to.equal("odd")
     })
-
+    
     it ("Función que nos devuelve un saludo para cada nombre", () => {
         expect(greeting("Javi")).to.equal("Hola, Javi!")
         expect(greeting("gente")).to.equal("Hola, gente!")
@@ -94,6 +94,11 @@ describe("Variables en JS", () => {
     it("Completa todas las constantes que faltan", () => {
 
         const a = 10;
+        const b =1.34;
+        const c = true;
+        const d = "Buenos días";
+        const e = "Pepe";
+        const f = "Buenos días, pepe";
 
         expect(a).to.equal(10);
         expect(b).to.equal(1.34);
@@ -102,10 +107,18 @@ describe("Variables en JS", () => {
         expect(e).to.equal("Pepe");
         expect(f).to.equal("Buenos días, pepe");
     })
-
+    
     it("Completa todas las variables que faltan para que las operaciones resulten correctamente", () => {
 
         let a = 11;
+        let b = 0.34;
+        let c = 10;
+        let d = 0;
+        let e = 340;
+        let f = 10;
+        let g = 3;
+        let x = 4;
+        let y = 3;
 
         expect(a + b).to.equal(11.34);
         expect(a * c).to.equal(110);
@@ -119,6 +132,11 @@ describe("Variables en JS", () => {
     it("Completa todas las variables que faltan para que se cumplan las condiciones", () => {
 
         let a = 10;
+        a = 10;
+        let b = 100;
+        let c;
+        let d = "Hi";
+        let n = "hello"
 
         expect(a > 9).to.be.true;
         expect(a < 11).to.be.true;
