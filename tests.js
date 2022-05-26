@@ -464,5 +464,19 @@ describe("Operaciones iterables", () => {
 
     // Bonus: Escribe un test como los anteriores con algún ejemplo que utilice 
     // una lista alguna de las funciones que hemos visto, como map o filter.
+    it("map nos permite realizar operaciones elemento a elemento (2)", () => {
+
+        let list = ["Gaby", "Flor", "Carol", "Nika"];
+
+        // utiliza la función map para aplicar los números de la lista y guardar la nueva lista en result
+        let result = list.map(n => n + ", llegué al final!");   
+               
+        expect(result).to.have.same.members([
+            "Gaby, llegué al final!",
+            "Flor, llegué al final!",
+            "Carol, llegué al final!",
+            "Nika, llegué al final!",
+        ]);
+    })
     
 })
